@@ -48,6 +48,9 @@ body {
 
 .nav-dropdown a {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
 }
 
 .nav-dropdown ul { 
@@ -62,7 +65,7 @@ body {
 }
 
 .nav-dropdown ul li {
-    padding: 10px;
+    padding-bottom: 8px;
     display: flex;
     justify-content: center;
 }
@@ -77,16 +80,19 @@ body {
     display: inline-block;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-dropdown a:focus + ul,
+.nav-dropdown a:hover + ul {
+    display: inline-block;
 }
 
 .nav-buttons {
     display: flex;
     justify-content: center;
     padding-top: 12px;
-}
-
-.nav-buttons  .nav-buttons:focus + ul{
-    display: block;
 }
 
 .content-second {
