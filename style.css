@@ -40,6 +40,53 @@ body {
 .nav-dropdown {
     color: white;
     position: relative;
+    height: 50px;
+    width: 100px;
+    right: 50px;
+    border: 2px gray solid;
+}
+
+.nav-dropdown a {
+    text-decoration: none;
+}
+
+.nav-dropdown ul { 
+        margin-top: 40px;
+        width: 100px;
+        border: 2px gray solid;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.25);
+        display: none;
+}
+
+.nav-dropdown ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-dropdown ul li:hover {
+    background-color: aqua;
+}
+
+.nav-dropdown ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.nav-buttons  .nav-buttons:focus + ul{
+    display: block;
 }
 
 .content-second {
