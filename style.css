@@ -45,6 +45,7 @@ body {
     border: 2px gray solid;
     border-radius: 10px;
     margin-left: 25px;
+    text-transform: uppercase;
 }
 
 .nav-dropdown a {
@@ -56,15 +57,15 @@ body {
 }
 
 .nav-dropdown ul { 
-        margin-top: 50px;
-        width: 150px;
-        border: 2px gray solid;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.25);
-        border-radius: 10px;
-        display: none;
+    margin-top: 50px;
+    width: 150px;
+    border: 2px gray solid;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: none;
 }
 
 .nav-dropdown ul li {
