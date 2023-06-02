@@ -38,8 +38,60 @@ body {
 }
 
 .nav-dropdown {
-    color: white;
     position: relative;
+    height: 50px;
+    width: 150px;
+    right: 50px;
+    border: 2px gray solid;
+    border-radius: 10px;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.nav-dropdown a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    color: white;
+}
+
+.nav-dropdown ul { 
+    margin-top: 50px;
+    width: 150px;
+    border: 2px gray solid;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: none;
+}
+
+.nav-dropdown ul li {
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-dropdown ul li:hover {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    border-radius: 10px;
+}
+
+.nav-dropdown ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-dropdown a:focus + ul,
+.nav-dropdown a:hover + ul,
+.nav-dropdown ul:hover {
+    display: block;
 }
 
 .content-second {
