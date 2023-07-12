@@ -299,6 +299,7 @@ body {
     flex-direction: column;
     border: 2px rgb(194, 189, 189) solid;
     border-radius: 10px 10px 10px 0;
+    transition: linear 0.5s;
 }
 
 .quarter-second-text {
