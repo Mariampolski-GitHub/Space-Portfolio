@@ -21,10 +21,8 @@ body {
     background-size: cover;
     max-height: 1080px;
     max-width: 1920px;
-    padding-top: 100px;
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 800px;
 }
 
 .navigation {
@@ -107,22 +105,30 @@ body {
     display: block;
 }
 
+.blank {
+    width: 100%;
+    height: 100px;
+}
+
 .wrapper-advantages {
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     display: flex;
     width: 100%;
-    height: 700px;
-    left: auto;
-    margin: auto;
-    margin-top: 120px;
+    height: 100%;
 }
 
 .advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
     width: 400px;
     height: 600px;
-    margin: auto;
     border-radius: 20px;
     border: 2px grey solid;
+    backdrop-filter: blur(5px) brightness(0.75);
     transition: all 0.25s ease;
 }
 
@@ -131,18 +137,6 @@ body {
     z-index: 1;
 }
 
-.icon-advantages-development {
-    background-image: url(icons/development.png);
-    background-color: aliceblue;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    content: "";
-    color: white;
-}
 
 .advantages-header {
     font-size: 40px;
@@ -157,7 +151,6 @@ body {
     font-size: 20px;
     display: flex;
     text-align: justify;
-    padding: 50px 5px 0px 5px;
 }
 
 .read-more {
@@ -166,7 +159,6 @@ body {
     height: 50px;
     background-color: black;
     display: flex;
-    margin-top: 105px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -193,11 +185,13 @@ body {
     right: -300px;
     top: 150px;
     z-index: 3;
-    background-color: white;
+    background-color: black;
     width: 350px;
     height: 600px;
+    border: 2px grey solid;
     border-radius: 25px;
     transition: all 0.25s ease;
+    color: white;
 }
 
 .rightbar-feature:hover {
@@ -205,28 +199,189 @@ body {
 }
 
 .rightbar-feature-rotetedtext {
-    display: flex;
-    width: 80px;
-    height: 80px;
-    border: 1px blue solid;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    right: 35%;
+    width: 290px;
+    border: 2px grey solid;
     border-radius: 25px;
     transform: rotate(90deg);
     text-transform: uppercase;
 }
 
+.rightbar-feature-header {
+    position: relative;
+    left: 50px;
+    width: 75%;
+    height: 20%;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px grey solid;
+}
+
+.rightbar-feature-content {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 75%;
+    height: 65%;
+    background-color: black;
+    border-radius: 25px;
+    border: 2px grey solid;
+}
+
 .content-second {
-    max-height: 1080px;
-    max-width: 1920px;
-    background-color: white;
+    background-image: url(/img/nasabackground2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 1080px;
+    max-width: 1920px;
+    display: flex;
     width: 100%;
-    height: 100vh;
-    border: 1px green solid;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
 }
 
+.quarter-container {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 2px green solid;
+}
 
+.quarter-first {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px rgb(194, 189, 189) solid;
+    border-radius: 10px 10px 0 10px;
+    transition: linear 0.5s;
+}
+
+.quarter-first-text {
+ font-weight: 800;
+ font-size: 20px;
+ padding-bottom: 10px;
+ color: rgb(194, 189, 189)
+}
+
+.quarter-icon-key {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(icons/icons8-key-security-100.png);
+    background-repeat: no-repeat;
+    filter: invert(0.80);
+}
+
+.quarter-first:hover{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.quarter-second {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px rgb(194, 189, 189) solid;
+    border-radius: 10px 10px 10px 0;
+}
+
+.quarter-second-text {
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(194, 189, 189)
+}
+
+.quarter-icon-company {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(icons/icons8-company-100.png);
+    background-repeat: no-repeat;
+    filter: invert(0.80);
+}
+
+.quarter-second:hover{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.quarter-third {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px rgb(194, 189, 189) solid;
+    border-radius: 10px 0 10px 10px;
+}
+
+.quarter-third-text {
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(194, 189, 189)
+}
+
+.quarter-icon-sale {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(icons/icons8-sale-100.png);
+    background-repeat: no-repeat;
+    filter: invert(0.80);
+}
+
+.quarter-fourth {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px rgb(194, 189, 189) solid;
+    border-radius: 0 10px 10px 10px;
+}
+
+.quarter-fourth-text {
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(194, 189, 189)
+}
+
+.quarter-icon-star {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(icons/icons8-star-100.png);
+    background-repeat: no-repeat;
+    filter: invert(0.80);
+}
 
 
 
